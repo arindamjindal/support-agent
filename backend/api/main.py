@@ -46,7 +46,15 @@ app = FastAPI(title="Nimbus Gear Support Agent API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://support-agent-arindamjindal.vercel.app",
+        # Vercel also generates preview URLs matching this pattern --
+        # the wildcard below covers all of them. Replace with your exact
+        # production URL once you know it.
+        "https://support-agent-*.vercel.app",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )

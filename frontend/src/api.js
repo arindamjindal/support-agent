@@ -3,7 +3,7 @@
 // need to POST a customer_id + message) -- instead it streams plain SSE-
 // formatted text over a regular fetch(), which we parse by hand below.
 
-const BASE_URL = 'http://localhost:8000'
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://support-agent-backend-25lb.onrender.com'
 
 function authHeaders() {
   const token = localStorage.getItem('nimbus_token')
