@@ -49,11 +49,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://support-agent-arindamjindal.vercel.app",
-        # Vercel also generates preview URLs matching this pattern --
-        # the wildcard below covers all of them. Replace with your exact
-        # production URL once you know it.
-        "https://support-agent-*.vercel.app",
+        "https://support-agent-frontend-ten.vercel.app",
+        "https://support-agent-frontend-k6o9ksks7-arindam1.vercel.app",
     ],
     allow_methods=["*"],
     allow_headers=["*"],
