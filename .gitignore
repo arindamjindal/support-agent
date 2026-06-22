@@ -1,0 +1,15 @@
+# secrets
+backend/.env
+
+# python
+__pycache__/
+*.pyc
+venv/
+
+# database files (Neon is the real store now)
+backend/db/support.db
+backend/db/checkpoints.db
+
+# frontend build output and deps
+frontend/node_modules/
+frontend/dist/
